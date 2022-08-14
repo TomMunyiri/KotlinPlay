@@ -20,4 +20,13 @@ fun main() {
     for ((name, age) in ages) {
         println("Name: $name. Age: $age")
     }
+
+    val numbers = listOf(1, 2, 5, 90, 6, 89, 30)
+    for ((index, element) in numbers.withIndex()) {
+        println("$element is at index $index")
+    }
+
+    //ranges can be of any type, int, characters...as long as the type can implement the Comparable interface (can be compared)
+    var charactersRange = 'a'..'z'
+    var numbersRange = 1..10
 }
