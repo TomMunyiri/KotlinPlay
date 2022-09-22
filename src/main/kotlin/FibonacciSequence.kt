@@ -9,6 +9,7 @@ fun fibonacci(limit: Int) {
     //1,1,2,3,5,8,13,21
     for (i in 1..limit) {
         println(current)
+        //help us hold current value after each iteration before it is incremented
         val temp = current
         prevprev = prev
         prev = temp
