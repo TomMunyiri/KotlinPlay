@@ -1,5 +1,7 @@
 fun main() {
     fibonacci(8)
+    //val number="147827.0795"
+    //println(number.formatAmount())
 }
 
 fun fibonacci(limit: Int) {
@@ -16,3 +18,6 @@ fun fibonacci(limit: Int) {
         current = prev + prevprev
     }
 }
+
+
+
