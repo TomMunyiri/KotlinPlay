@@ -1,6 +1,6 @@
 fun main() {
     val myTestString = "Invalid Agent Authorization PIN"
-    if (myTestString in "Invalid") {
+    if ("Invalid" in myTestString) {
         println("contains")
     } else {
         println("does not contain")
