@@ -1,3 +1,5 @@
+import com.google.gson.Gson
+
 /**
  * This is the perfect example I found on Twitter for high order functions implementation
  * Thanks to Mambo Bryan
@@ -7,6 +9,9 @@ fun main() {
     val degrees: Double = readLine()?.toDouble() ?: 0.0
     val fahrenheit = convertDegreesToFahrenheit(degrees, { it * 1.8 + 32 })
     println("$degrees Degrees Celsius =  $fahrenheit Fahrenheit")
+    val gson = Gson()
+    val myJson=gson.toJson("{\"data\":{\"array:\"[]}}")
+    println(myJson)
 }
 
 /**
