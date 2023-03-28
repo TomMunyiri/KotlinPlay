@@ -1,3 +1,6 @@
+import java.io.PrintWriter
+import java.io.StringWriter
+
 fun main() {
     //kotlinTernaryOperator()
     //conditionalIfElse()
@@ -9,6 +12,19 @@ fun main() {
         println("${array[x]} is a good name")
         x += 1
     }
+    println(maskPhone("7557691"))
+}
+
+fun maskPhone(phoneNumber: String): String? {
+    val maskedPhoneNumber: String = try {
+        //String cardEnc = unDecMe(Base64.decodeBase64(encodedCard));
+        phoneNumber.substring(0, 2) + "***" + phoneNumber.substring(5, 7)
+    } catch (e: Exception) {
+        val sw = StringWriter()
+        e.printStackTrace(PrintWriter(sw))
+        "Error in Card display"
+    }
+    return maskedPhoneNumber
 }
 
 class TestBody(val firstName: String, val lastName: String, val isEmployed: Boolean) {
