@@ -15,6 +15,7 @@ dependencies {
     testImplementation(kotlin("test"))
     api("com.google.code.gson:gson:$gsonVersion")
     implementation(kotlin("stdlib-jdk8"))
+    implementation("org.json:json:20230227")
 }
 
 tasks.test {
