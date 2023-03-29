@@ -16,7 +16,7 @@ fun main() {
         x += 1
     }
     val mini =
-        "2023-03-28 15:30 PM|DR|5|Send Money to Tom Mwangi Munyiri - 75***91[Receive Money from Gimson Waibala - 75***91|100000100054|FT~2023-03-28 15:26 PM|CR|5|100000049721 P2P Waibala  Waibala - 72***83|100000100053|FT~2023-03-28 15:23 PM|DR|5|100000049697 P2P Customer - 75***91|100000100052|FT~"
+        "2023-03-29 11:35 AM|CR|5|#Send Money to Tom Mwangi Munyiri - 75***91#Receive Money from WAIBALA WAIBALA - 72***83|100000100063|FT~2023-03-28 16:07 PM|CR|5|100000049809 P2P Waibala  Waibala - 72***83|100000100056|FT~2023-03-28 15:30 PM|DR|5|100000049745 P2P Tom Mwangi Munyiri - 75***91|100000100054|FT~"
     println(formatMinistatement(mini))
 }
 
@@ -41,7 +41,7 @@ fun formatMinistatement(mini: String): String? {
             val drCr = miniItems[1]
             val narration = miniItems[3]
             val narrationStrings: Array<String> =
-                narration.split(Pattern.quote("[").toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                narration.split(Pattern.quote("#").toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
             try {
                 if ("CR".equals(drCr, ignoreCase = true)) {
                     miniStatement.put("naration", narrationStrings[1])
