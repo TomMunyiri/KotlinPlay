@@ -16,6 +16,7 @@ dependencies {
     api("com.google.code.gson:gson:$gsonVersion")
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.json:json:20230227")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
 }
 
 tasks.test {
