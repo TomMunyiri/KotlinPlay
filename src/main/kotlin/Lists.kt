@@ -1,13 +1,17 @@
 fun main() {
-    val provinces = ArrayList<String>()
-    provinces.add("Choiseul Province")
-    provinces.add("Western Province")
-    provinces.add("Isabel Province")
-    provinces.add("Renbell Province")
-    provinces.add("Central Province")
-    provinces.add("Malaita Province")
-    provinces.add("Makira Province")
-    provinces.add("Temotu Province")
-    provinces.add("Guadalcanal Province")
-    println(provinces)
+    square()
 }
+
+fun square() {
+    //The long way
+    val numbers = (1..10).toList()
+    val squares = mutableListOf<Int>()
+    for (num in numbers) {
+        squares.add(num * num)
+    }
+    println(squares)
+    //the simplified way with map
+    val squareMap = (1..10).map { it * it }
+    println(squareMap)
+}
+
