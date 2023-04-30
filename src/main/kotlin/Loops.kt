@@ -26,6 +26,10 @@ fun main() {
         println("$element is at index $index")
     }
 
+    numbers.forEachIndexed { index, number ->
+        println("$number at index $index")
+    }
+
     //ranges can be of any type, int, characters...as long as the type can implement the Comparable interface (can be compared)
     var charactersRange = 'a'..'z'
     var numbersRange = 1..10
