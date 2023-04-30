@@ -2,7 +2,7 @@ fun main() {
     square()
 }
 
-fun square() {
+private fun square() {
     //The long way
     val numbers = (1..10).toList()
     val squares = mutableListOf<Int>()
@@ -14,4 +14,6 @@ fun square() {
     val squareMap = (1..10).map { it * it }
     println(squareMap)
 }
+
+
 
