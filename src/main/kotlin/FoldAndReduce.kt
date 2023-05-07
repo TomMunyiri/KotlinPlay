@@ -10,7 +10,7 @@ fun main() {
  */
 
 fun reduceExample() {
-    //lets find the sum of 1 to 5 elements
+    //let's find the sum of 1 to 5 elements
     (1..5).reduce { acc, value ->
         acc + value
     }.also {
@@ -20,7 +20,7 @@ fun reduceExample() {
 }
 
 fun foldExample() {
-    //lets find the sum of 1 to 5 elements. O(seed value) is the initial value of acc. You can change it and see the effect
+    //let's find the sum of 1 to 5 elements. O(seed value) is the initial value of acc. You can change it and see the effect
     (1..5).fold(0) { acc, value ->
         acc + value
     }.also {
