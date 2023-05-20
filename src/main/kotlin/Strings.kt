@@ -1,5 +1,6 @@
 fun main() {
     joinToString()
+    removeBeforeAfter()
 }
 
 private fun joinToString() {
@@ -20,4 +21,11 @@ private fun joinToString() {
     )
 
     println(joinFruits)
+}
+
+private fun removeBeforeAfter() {
+    val myString = "404404003001"
+    var newString = ""
+    newString = myString.substring(3, myString.length - 3)
+    println(newString)
 }
