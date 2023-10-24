@@ -11,7 +11,7 @@
  * Email: munyiri.thomas@eclectics.io
  */
 
-import io.reactivex.disposables.CompositeDisposable
+/*import io.reactivex.disposables.CompositeDisposable
 
 class Presenter(view: ListContract.View, elementsProvider: ElementsProvider, schedulerFacade: SchedulerFacade) {
     val disposables = CompositeDisposable()
@@ -35,4 +35,4 @@ class Presenter(view: ListContract.View, elementsProvider: ElementsProvider, sch
                 )
         )
     }
-}
+}*/

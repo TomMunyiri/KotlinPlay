@@ -1,9 +1,20 @@
 fun main() {
+    addItemAt0()
     square()
     removeSuffix()
     take()
     drop()
     partition()
+}
+
+private fun addItemAt0() {
+    val voucherList = ArrayList<String>()
+    voucherList.add("First")
+    voucherList.add("Second")
+    voucherList.add("Third")
+    voucherList.add("Fourth")
+    voucherList.add(0, "Added Item")
+    println(voucherList)
 }
 
 private fun square() {

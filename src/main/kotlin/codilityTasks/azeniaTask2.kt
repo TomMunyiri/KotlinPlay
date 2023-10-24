@@ -16,7 +16,7 @@ package com.eclectics.mobilemoney.ourtelekom
  */
 
 
-import androidx.databinding.ObservableField
+/*import androidx.databinding.ObservableField
 import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import io.reactivex.Completable
@@ -183,4 +183,6 @@ class SignUpToNewsletterViewModel(
  *  <string name="network_error">Network error</string>
  *</resources>
  **/
+
+ */
 
