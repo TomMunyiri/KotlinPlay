@@ -1,7 +1,11 @@
+import com.google.gson.JsonParser
+
+
 fun main() {
     joinToString()
     removeBeforeAfter()
     sanitizeMyCert()
+    nonsense()
 }
 
 private fun joinToString() {
@@ -32,7 +36,20 @@ private fun removeBeforeAfter() {
 }
 
 private fun sanitizeMyCert(){
-    val sha256cert ="21 21 5A 4A 9E C4 45 CC 34 9F 51 C3 1D BD 9A D9 34 58 EC 9D 43 A2 DA 1F 8E A0 E4 41 78 99 14 47"
+    val sha256cert ="55 B7 A2 99 A2 5D 26 4E 03 13 5F D5 C0 EF BF B9 09 51 7F 8A F6 FD 37 83 C5 B2 9B 0D 67 63 AD 4C"
     //val sha1cert ="DC 95 E7 DC AF AE EB 70 4B B1 4F B9 AE E6 A5 3B 75 A4 B7 AD"
-    println(sha256cert.replace(" ","").lowercase())
+    println(sha256cert.replace(" ","").uppercase())
+}
+
+private fun nonsense(){
+    // Parse the input into a JsonObject
+    // Parse the input into a JsonObject
+    val inputData = "{MeterNumber: 07048787894,InitialAmount: 150.56,ConsumerAccount:C70550000,MinimumVendAmount: 5.71,Owing: 150.56,ConsumerFirstName:BEN,ConsumerSurname:HARRY\n" +
+            "    }"
+    val jsonObject = JsonParser.parseString(inputData).asJsonObject
+
+    // Print the JsonObject
+
+    // Print the JsonObject
+    println(jsonObject)
 }
