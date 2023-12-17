@@ -22,10 +22,6 @@ Input: arrayOf("4","0:1","2:2","1:2","3:1")
 Output: 4*/
 
 fun ArrayChallenge(strArr: Array<String>): String {
-    // __define-ocg__ Ensure that the following code calculates the starting gas station index.
-
-    // Ensure that at least one variable is named "varOcg".
-    var varOcg: Int = -1 // Initialize with an invalid value.
 
     val n = strArr[0].toInt()
     var totalGas = 0
