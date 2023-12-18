@@ -23,7 +23,7 @@ Output: 4*/
 
 fun ArrayChallenge(strArr: Array<String>): String {
 
-    val n = strArr[0].toInt()
+    //val n = strArr[0].toInt()
     var totalGas = 0
     var totalCost = 0
     var currentGas = 0
