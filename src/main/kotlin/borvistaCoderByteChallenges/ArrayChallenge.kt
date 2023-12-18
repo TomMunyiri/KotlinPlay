@@ -47,7 +47,7 @@ fun ArrayChallenge(strArr: Array<String>): String {
 
     return if (totalGas >= totalCost) {
         // If there's enough gas to cover the entire route, return the starting station.
-        (startStation+1).toString()
+        (startStation + 1).toString()
     } else {
         // If not enough gas, it's impossible to complete the route.
         "impossible"
@@ -57,5 +57,5 @@ fun ArrayChallenge(strArr: Array<String>): String {
 fun main() {
     println(ArrayChallenge(arrayOf("4", "1:1", "2:2", "1:2", "0:1")))
     println(ArrayChallenge(arrayOf("4", "0:1", "2:2", "1:2", "3:1")))
-    println(ArrayChallenge(arrayOf("4","3:1","2:2","1:2","0:1")))
+    println(ArrayChallenge(arrayOf("4", "3:1", "2:2", "1:2", "0:1")))
 }

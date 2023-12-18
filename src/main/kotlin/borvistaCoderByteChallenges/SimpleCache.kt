@@ -36,14 +36,14 @@ fun main() {
     val cache = SimpleCache
 
     // Modifying the cache (keep this here)
-    /*println(cache.add("article-123", "https://coderbyte.com/article-123"))
+    println(cache.add("article-123", "https://coderbyte.com/article-123"))
     println(cache.add("article-456", "https://coderbyte.com/article-456"))
     println(cache.add("how-to-code-444", "https://coderbyte.com/how-to-code-444"))
     println(cache.get("first-article"))
     println(cache.get("second-article"))
     println(cache.get("article-456"))
     println(cache.add("article-123", "https://coderbyte.com/article-123"))
-    println(cache.size())*/
+    println(cache.size())
 
     println(cache.add("a", "value1"))
     println(cache.add("b", "value2"))
