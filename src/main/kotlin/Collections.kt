@@ -8,7 +8,7 @@ fun flatMapVsMap() {
     val dev3 = Developer("Tom", listOf("Javascript"))
 
     /**
-     * map results in nesting
+     * map - results in nesting
      * it will create a list then take the list of languages by each dev and puts the list inside the parent list
      * if that even makes sense...hahaha
      * @returns [[Kotlin, Java], [Scala, Ruby], [Javascript, PHP]]
@@ -16,7 +16,7 @@ fun flatMapVsMap() {
     val listMap = listOf(dev1, dev2, dev3).map { it.languages }
 
     /**
-     * flatMap maps and flattens
+     * flatMap - maps and flattens
      * combines all languages by each dev and puts them into a single list
      * @returns [Kotlin, Java, Scala, Ruby, Javascript, PHP]
      */
