@@ -2,7 +2,7 @@ package borvistaCoderByteChallenges
 
 /*Array Challenge
 
-Have the function ArrayChallenge(strArr) take strArr which will be an an array consisting of the following elements:
+Have the function ArrayChallenge(strArr) take strArr which will be an array consisting of the following elements:
 N which will be the number of gas stations in a circular route and each subsequent element will be the string g:c
 where g is the amount of gas in gallons at that gas station and c will be the amount of gallons of gas needed
 to get to the following gas station.
