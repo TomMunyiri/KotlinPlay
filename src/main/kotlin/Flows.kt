@@ -13,6 +13,7 @@ import kotlinx.coroutines.runBlocking
  */
 
 fun main() {
+    //Flow (Cold stream)
     runBlocking {
         //collect acts as a terminal operator. Our flow is not active until collect is called
         countDownTimer().collect { value -> println("Current Value: $value") }
