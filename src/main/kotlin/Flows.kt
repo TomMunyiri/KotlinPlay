@@ -34,3 +34,16 @@ fun countDownTimer(): Flow<Int> {
         }
     }
 }
+
+/**
+ * Flow - think of it as a river carrying data from various sources to different parts of your app
+ *      - Is a cold stream.
+ *      - Does not represent state.
+ *      - Does not remember past values. Each time you collect from a Flow, it starts from scratch
+ *      - It is immutable once created
+ *      - Best for asynchronous data streams where past values are not crucial
+ *      * Usages: fetching data from internet, reading sensor data, handling user interactions, database queries
+ */
+/**
+ * StateFlow -
+ */
