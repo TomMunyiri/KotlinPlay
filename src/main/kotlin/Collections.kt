@@ -1,5 +1,6 @@
 fun main() {
     flatMapVsMap()
+    zipNext()
 }
 
 fun flatMapVsMap() {
@@ -25,6 +26,22 @@ fun flatMapVsMap() {
 
     println("Mapped list: $listMap")
     println("Flat Mapped list: $listFlatMap")
+}
+
+private fun zipNext() {
+    val dailyPrices = listOf(100.0, 102.5, 101.0, 105.0, 107.0)
+
+    val dailyPricesW = listOf("Mutheu", "Mwas", "test")
+    val l = dailyPricesW.joinToString().replace(",", "")
+    println(l)
+
+    val result = dailyPricesW.joinToString(separator = " | ", prefix = "[", postfix = "]")
+    println(result)
+
+    val dailyChanges = dailyPrices.zipWithNext { previous, next ->
+        next - previous
+    }
+    println(dailyChanges)
 }
 
 data class Developer(

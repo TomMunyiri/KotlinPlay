@@ -46,3 +46,21 @@ class AggregateUserDataUseCase1(
         job.cancel()
     }
 }
+
+data class AggregatedData(
+    val user: UserEntity,
+    val comments: List<CommentEntity>,
+    val suggestedFriends: List<FriendEntity>
+)
+
+typealias UserId = String
+
+data class UserEntity(val id: UserId, val name: String)
+
+data class CommentEntity(val id: String, val content: String)
+
+data class FriendEntity(val id: String, val name: String)
+
+interface AggregateUseCase{
+    suspend fun aggregateDataForCurrentUser(): AggregatedData
+}

@@ -1,5 +1,5 @@
 /**
- * Referenced this article by Banda https://effbada.hashnode.dev/understanding-kotlin-scope-functions-ckcfxb0c000093cs10gsdcvhe
+ * Referenced this article by Bada https://effbada.hashnode.dev/understanding-kotlin-scope-functions-ckcfxb0c000093cs10gsdcvhe
  */
 data class Animal(
     var name: String = "Panda",
