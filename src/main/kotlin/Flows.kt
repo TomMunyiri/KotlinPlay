@@ -45,5 +45,23 @@ fun countDownTimer(): Flow<Int> {
  *      * Usages: fetching data from internet, reading sensor data, handling user interactions, database queries
  */
 /**
- * StateFlow -
+ * StateFlow - think of it as a special river with a memory. It remembers the latest piece of information that flowed through it
+ *           - Is a hot stream
+ *           - represents a single state
+ *           - remembers and exposes the latest value emitted
+ *           - Conflates values - if a new value is set before the previous one is collected, the previous value is overwritten
+ *           - Emits values only when they differ from the previous item
+ *           - MutableStateFlow(value) - requires and initial value
+ *           - Usages: UIState->screen visibility, text content, user input
+ */
+/**
+ * SharedFlow - think of it as a river that branches out, sharing the same water (data) with multiple destinations
+ *            - share data with multiple subscribers simultaneously
+ *            - Is a hot stream
+ *            - MutableSharedFlow() - does not require an initial value
+ *            - Unlike StateFlow, it emits all values regardless of whether they differ from previous item
+ *            - Can optionally have a replay cache - it can replay a specified number of previously emitted values to new subscribers
+ *            - Provides configurable conflation options to handle different overflow strategies
+ *            - tryEmit() - emit values and not suspend the caller, it returns a boolean immediately if the buffer is full, enabling error handling
+ *            - Usages: Broadcasting events or updates - new messages in chat app, theme changes, synchronize shopping cart changes
  */
