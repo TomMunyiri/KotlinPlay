@@ -1,7 +1,8 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 val gsonVersion = "2.9.0"
 plugins {
-    kotlin("jvm") version "1.5.10"
+    //kotlin("jvm") version "1.5.10"
+    kotlin("jvm") version "2.0.0"
 }
 
 group = "me.tmwangi"
@@ -17,6 +18,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.json:json:20230227")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
 }
 
 tasks.test {
