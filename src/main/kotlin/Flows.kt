@@ -51,7 +51,7 @@ fun countDownTimer(): Flow<Int> {
  *           - remembers and exposes the latest value emitted
  *           - Conflates values - if a new value is set before the previous one is collected, the previous value is overwritten
  *           - Emits values only when they differ from the previous item
- *           - MutableStateFlow(value) - requires and initial value
+ *           - MutableStateFlow(value) - requires an initial value
  *           - Usages: UIState->screen visibility, text content, user input
  */
 /**

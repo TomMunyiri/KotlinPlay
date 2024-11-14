@@ -43,7 +43,7 @@ private fun removeBeforeAfter() {
 }
 
 private fun sanitizeMyCert(){
-    val sha256cert ="55 B7 A2 99 A2 5D 26 4E 03 13 5F D5 C0 EF BF B9 09 51 7F 8A F6 FD 37 83 C5 B2 9B 0D 67 63 AD 4C"
+    val sha256cert ="67 62 32 55 C4 A0 9E C1 38 91 35 EF D1 74 4D 7A C4 A5 8B C1 24 9A 58 B3 B0 01 B0 82 BD 07 05 73"
     //val sha1cert ="DC 95 E7 DC AF AE EB 70 4B B1 4F B9 AE E6 A5 3B 75 A4 B7 AD"
     println(sha256cert.replace(" ","").uppercase())
 }
