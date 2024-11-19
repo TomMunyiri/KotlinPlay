@@ -15,6 +15,7 @@ fun main() {
     val array = intArrayOf(1, 4, 57, 89, 45, 67, 34)
     println("Find my element: Index in array => [${binarySearch(array.sortedArray(), 34)}]")
     println("Square root is: ${checkIfSquare(9)}")
+    println("First value: ${firstValue(array.sortedArray(), 88)}")
 }
 
 /**
@@ -102,9 +103,24 @@ fun checkIfSquare(target: Int): Boolean {
     return false
 }
 
+//Lower bound problem
 fun firstValue(intArray: IntArray, target: Int): Int {
     /**
      * Given an array of integers, find the first value where x >= target
      */
-    return -1
+    var ans = -1
+    var left = 0
+    var right = intArray.size - 1
+    while (left <= right) {
+        val mid = left + (right - left) / 2
+        when {
+            intArray[mid] >= target -> {
+                ans = intArray[mid]
+                right = mid - 1
+            }
+
+            else -> left = mid + 1
+        }
+    }
+    return ans
 }
