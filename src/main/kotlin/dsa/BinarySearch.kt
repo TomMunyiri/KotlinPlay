@@ -124,3 +124,8 @@ fun firstValue(intArray: IntArray, target: Int): Int {
     }
     return ans
 }
+
+//rotated array problem - this array isn't sorted
+fun findSmallestElementInUnsortedArray(intArray: IntArray){
+
+}
