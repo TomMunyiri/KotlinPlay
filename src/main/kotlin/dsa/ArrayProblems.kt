@@ -16,6 +16,8 @@ fun main() {
             findTimesOfAppearanceString(stringArray, targetString)
         }"
     )
+
+    println("Reversed array: ${reverseArray(intArray).map { it }}")
 }
 
 fun findTimesOfAppearanceInt(intArray: IntArray, target: Int): Int {
@@ -40,4 +42,22 @@ fun findTimesOfAppearanceString(stringArray: Array<String>, target: String): Int
         }
     }
     return count
+}
+
+/**
+ * Time Complexity: 𝑂(𝑛) (Linear, processes all elements once)
+ * Space Complexity: 𝑂(1)(In-place reversal)
+ */
+fun reverseArray(intArray: IntArray): IntArray {
+    //Type safe Generics -> fun <T> reverseArray(array: Array<T>): Array<T> {
+    var start = 0
+    var end = intArray.size - 1
+    while (start <= end) {
+        val temp = intArray[start]
+        intArray[start] = intArray[end]
+        intArray[end] = temp
+        start++
+        end--
+    }
+    return intArray
 }

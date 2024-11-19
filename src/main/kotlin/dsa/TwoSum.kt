@@ -18,8 +18,11 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
 
 fun twoSum2(nums: IntArray, target: Int): IntArray {
     //pointers - suitable for larger data sets
+    //this approach is only suitable if the array is sorted in ascending order
+    //if the expectation is to return the indices of the items and the array isn't sorted, you have to modify
+    // and remember the initial indices for each of the items, hint: create a pair for each element Pair<Element, Index>
     nums.sort() // Sort the array in ascending order
-    var left = 0
+    /*var left = 0
     var right = nums.lastIndex
     while (left < right) {
         val currentSum = nums[left] + nums[right]
@@ -31,7 +34,26 @@ fun twoSum2(nums: IntArray, target: Int): IntArray {
             right--
         }
     }
-    throw IllegalArgumentException("No two sum solution")
+    throw IllegalArgumentException("No two sum solution")*/
+
+    //[2,7,11,15]
+    var left = 0
+    var right = nums.size - 1
+    var array: IntArray = intArrayOf()
+    while (left < right) {
+        val sum = nums[left] + nums[right]
+        when {
+            sum == target -> {
+                array = intArrayOf(left, right)
+                return array
+            }
+
+            sum < target -> left++
+            else -> right--
+        }
+
+    }
+    return array
 }
 
 fun main() {

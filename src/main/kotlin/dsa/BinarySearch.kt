@@ -101,3 +101,10 @@ fun checkIfSquare(target: Int): Boolean {
     }
     return false
 }
+
+fun firstValue(intArray: IntArray, target: Int): Int {
+    /**
+     * Given an array of integers, find the first value where x >= target
+     */
+    return -1
+}
