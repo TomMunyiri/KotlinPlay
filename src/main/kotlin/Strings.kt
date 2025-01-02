@@ -8,6 +8,15 @@ fun main() {
     sanitizeMyCert()
     nonsense()
     println("06/30/2024".formatToReadableDateFormat())
+    println("Reverse string: ${reverseString("hello")}")
+}
+
+fun reverseString(input: String): String {
+    val reversed = StringBuilder()
+    for (i in input.length - 1 downTo 0) {
+        reversed.append(input[i])
+    }
+    return reversed.toString()
 }
 
 private fun removeCharacters(){

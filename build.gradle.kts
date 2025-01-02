@@ -16,8 +16,8 @@ dependencies {
     testImplementation(kotlin("test"))
     api("com.google.code.gson:gson:$gsonVersion")
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.json:json:20230227")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.json:json:20240303")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.6.0")
 }
 
