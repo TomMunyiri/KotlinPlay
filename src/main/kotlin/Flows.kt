@@ -22,7 +22,7 @@ fun main() {
 
 fun countDownTimer(): Flow<Int> {
     val startingValue = 10
-    //this id a cold flow. flows by default are cold
+    //this is a cold flow. flows by default are cold
     return flow {
         var currentValue = startingValue
         emit(startingValue)

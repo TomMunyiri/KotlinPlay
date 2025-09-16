@@ -2,14 +2,18 @@ package dsa
 
 import java.util.*
 
+//9
 fun twoSum(nums: IntArray, target: Int): IntArray {
     //uses hashmap. not suitable for larger data sets
     //[2,7,11,15]
     val map = HashMap<Int, Int>()
+    //[(2,1)]
     for (i in nums.indices) {
         val complement = target - nums[i]
+        // complement =  7
+        // complement =  2
         if (map.containsKey(complement)) {
-            return intArrayOf(map[complement]!!, i)
+            return intArrayOf(map[complement]!!, i) // [1,2]
         }
         map[nums[i]] = i
     }
